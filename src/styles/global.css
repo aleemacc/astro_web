@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+h1 {
+	color: #2ec27e;
+    font-size: 1.5rem;
+}
+h2 {
+    color: #1e78e4;
+}
+p {
+	color: #eeeeee;
+}
+body {
+	background-color: #1c1c1f;
+	margin: 10;
+    padding: 10px;
+	width: 100%;
+	height: 100%;
+}
