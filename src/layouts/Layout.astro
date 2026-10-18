@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
 <!doctype html>
@@ -13,14 +15,9 @@ import '../styles/global.css';
 		<title>alemac</title>
 	</head>
 	<body>
-		<a href="/">~/</a>
-		<br>
-		<a href="/about">about/</a>
-		<br>
-		<a href="/blog">blog/</a>
-		<br>
-		<a href="/projects">projects/</a>
+		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
 
