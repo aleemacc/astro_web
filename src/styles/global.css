@@ -24,9 +24,25 @@ p {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* nav styles */
+
+.sidebar {
+    width: 160px;
+    background-color: #2e2e32;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
 
 .menu {
     border: none;
@@ -37,15 +53,16 @@ p {
 }
 
 .nav-links {
-  width: 100%;
-  display: none;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .nav-links a {
+  margin-left: -2rem;
   display: block;
   text-align: left;
-  padding: 5px 0;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   font-size: 1rem;
   color: #2ec27e;
@@ -54,6 +71,14 @@ p {
 .nav-links a:hover,
 .nav-links a:focus {
   font-weight: bold;
+}
+
+.main-content {
+  margin-left: 160px;
+  flex: 1;
+  padding: 1rem;
+  background-color: #1c1c1f;
+  color: #eeeeee;
 }
 
 :has(.menu[aria-expanded="true"]) .nav-links {
